@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'tradamedium';
+    src: url('../fonts/TradaSans-Medium.ttf') format('ttf'),
+    url('../fonts/TradaSans-Medium.ttf') format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'tradaregular';
+    src: url('../fonts/TradaSans-Regular.ttf') format('ttf'),
+    url('../fonts/TradaSans-Regular.ttf') format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap');
+
+$color-Principal: black;
+$color-hr: #8d8d8d;
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-Principal;
+}
+.navbar-item, .title{
+    color: $color-Principal;
+}
+
+
+.mybody{
+    padding: 10px 10% 0px 10%;
+}
+
+.navbar-principal{
+    margin: 40px 0;
+}
+
+
+
+
+//   ESTILOS GENERALES  {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+.capital{
+    text-transform: uppercase;
+}
+
+.separator{
+    background-color: $color-hr;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.centering{
+    text-align: center;
+}
+
+
+
+
+//   PERFIL  {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+.myname{
+    font-size: 60px!important;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 5px!important;
+}
+
+// MARGEN DE TITULOS
+.title.is-3{
+    margin-bottom: 0.3em!important;
+}
+
+
+
+//IMAGEN DE PERFIL
+.profile-img{
+    z-index: 1000;
+    width: 280px;
+//    border: 10px solid $color-Principal;
+}
+@media(min-width: 1000px){
+    .profile-img{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+}
+
+
+// ALINEAR TEXTO - PERFIL - COLUMNA 3
+.thignsido{
+    text-align: right!important;
+}
+
+@media(max-width: 80px){
+    .thingsido{
+        text-align: center!important;
+    }
+    
+    
+}
+
+
+
+
+//   PORTFOLIO - GALERIA DE IMAGENES  {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+
+// TITULO DEL PORTFOLIO
+section h3{
+    display: inline;
+    font-size: 35px!important;
+    font-family: 'tradaregular';
+    margin-bottom: 15px;
+}
+
+section p{
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.columna{
+    flex:25%;
+    padding: 5px;
+    
+}
+/*.columna img{
+    margin-top: 5px;
+}*/
+
+//NÚMERO DE COLUMNAS
+@media(max-width: 1100px){
+    .columna{
+        flex: 50%
+    }
+}
+@media(max-width: 700px){
+    .columna{
+        flex: 100%
+    }
+}
+
+
+//   footer  {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+
+.myfooter{
+    height: 150px;
+    margin-top: 100px;
+    color: $color-Principal;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 1023px){
+.navbar-menu {
+    background-color: #fff;
+    box-shadow: none;
+    padding: 0.5rem 0;
+}
+
+.navbar-item, .navbar-link {
+    display: inline;
+    margin: 0 auto;
+}
+
+.navbar-end{
+    margin: 0 auto;
+    text-align: center;
+}
+
+}
+
+
