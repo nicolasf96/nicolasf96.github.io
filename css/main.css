@@ -92,7 +92,7 @@ i.herramientas {
 }
 
 .profile-img {
-  z-index: 1000;
+  z-index: 2;
   width: 280px;
 }
 
@@ -100,7 +100,7 @@ i.herramientas {
   .profile-img {
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 2;
   }
 }
 .thignsido {
@@ -178,4 +178,21 @@ figcaption {
     margin: 0 auto;
     text-align: center;
   }
+}
+.modal-content {
+  width: 80% !important;
+}
+.modal-content .box {
+  padding: 3rem;
+  color: black;
+}
+.modal-content .box .modal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.modal-content .box p.herramientas {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
 }/*# sourceMappingURL=main.css.map */
