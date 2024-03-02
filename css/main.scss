@@ -243,3 +243,15 @@ figcaption{
         }
     }
 }
+
+@media(max-width:700px){
+    .modal-content{
+        width: 100%!important;
+        .box{
+            padding: 6px;
+            
+        }
+    }
+    
+    
+}
